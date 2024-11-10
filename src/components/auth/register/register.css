@@ -1,0 +1,158 @@
+/* Background with smooth multi-color gradient */
+.register-main {
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4, #ff9a9e, #d4c4fc, #a0eaff, #c9ffdd, #ff9a9e);
+    background-size: 700% 700%;
+    animation: gradientAnimation 20s ease-in-out infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Glassmorphic container with embossed effect */
+  .glassmorphic-container {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 50px rgba(255, 255, 255, 0.3) inset;
+    padding: 30px;
+    color: #fff;
+  }
+  
+  /* Slide-in animation for form fields */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .animate-slide-in {
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  /* Fade-in animation for header text */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in-down {
+    animation: fadeInDown 0.6s ease-out;
+  }
+  
+  /* Floating animation for form container */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  /* Smooth background gradient animation with gradual transitions */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    14% {
+      background-position: 20% 50%;
+    }
+    28% {
+      background-position: 40% 50%;
+    }
+    42% {
+      background-position: 60% 50%;
+    }
+    57% {
+      background-position: 80% 50%;
+    }
+    71% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Fade-in animation for error message */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Input fields styling with smooth transition */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #80d0c7;
+    background: rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Submit button styling with hover animation */
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #4f46e5;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #3b36c5;
+  }
+  
+  /* Header text with fade-in animation */
+  .header-text {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    animation: fadeInDown 0.6s ease-out;
+  }
+  
+  /* Error message styling with fade-in */
+  .error-message {
+    color: #f44336;
+    font-size: 0.875rem;
+    text-align: center;
+    animation: fadeIn 0.3s ease-out;
+    margin-top: 10px;
+  }
